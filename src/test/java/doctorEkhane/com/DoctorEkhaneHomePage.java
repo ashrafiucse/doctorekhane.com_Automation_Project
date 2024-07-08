@@ -2,6 +2,7 @@ package doctorEkhane.com;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class DoctorEkhaneHomePage extends DriverSetup {
@@ -61,9 +62,34 @@ public class DoctorEkhaneHomePage extends DriverSetup {
 
         //Locate Log in or Register button
         WebElement logInOrRegisterButton = driver.findElement(By.xpath("(//button[normalize-space()='Login/Register'])[1]"));
-        logInOrRegisterButton.click();
+        //logInOrRegisterButton.click();
 
+        //-------------------------------------------------------
 
+        //Locate Banner Book appointment link
+        WebElement bookAppointmentLink = driver.findElement(By.xpath("(//h2[normalize-space()='Book an appointment'])[1]"));
+        //System.out.println(bookAppointmentLink.getText());
+
+        //Locate Banner Book appointment phone icon
+        WebElement bookAppointmentPhoneIcon = driver.findElement(By.xpath("(//a[@class='bg-[#f2f2f259] p-2 w-max rounded-full cursor-pointer'])[1]"));
+        //bookAppointmentPhoneIcon.click();
+
+        //Locate Banner Emergency Support button
+        WebElement emergencySupportButton = driver.findElement(By.xpath("(//button[contains(@class,'font-medium rounded-[10px] flex gap-2 justify-center items-center transition-all ease-in-out duration-500 text-[#2992F2] hover:drop-shadow-[0_15px_10px_rgba(41,146,242,0.5)] bg-transparent border-[1px] border-[#2992F2]/[0.6] hover:border-[#2992F2]/[1] sm:text-base text-sm sm:p-4 p-2 md:w-max w-full')])[1]"));
+        //emergencySupportButton.click();
+
+        //Locate Banner See hospitals link
+        WebElement seeHospitalLink = driver.findElement(By.xpath("(//button[contains(@class,'text-[#2992F2] font-noto text-sm min-w-max font-semibold flex justify-center items-center gap-2.5 border-none rounded bg-transparent transition-all ease-in-out duration-500 p-2 m-auto')][normalize-space()='Visit hospital'])[1]"));
+        //seeHospitalLink.click();
+
+        //Locate Banner Search Expert doctors link
+        WebElement searchExpertDoctorsLink = driver.findElement(By.xpath("(//button[normalize-space()='Search Doctors'])[1]"));
+        //searchExpertDoctorsLink.click();
+        //-------------------------------------------------------------
+
+        //Locate Search by specialist Dropdown menu
+        WebElement searchBySpecialistDropMenu = driver.findElement(By.xpath("(//p[normalize-space()='search by specialties'])[1]"));
+        searchBySpecialistDropMenu.click();
         Thread.sleep(3000);
     }
 
