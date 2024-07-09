@@ -89,7 +89,101 @@ public class DoctorEkhaneHomePage extends DriverSetup {
 
         //Locate Search by specialist Dropdown menu
         WebElement searchBySpecialistDropMenu = driver.findElement(By.xpath("(//p[normalize-space()='search by specialties'])[1]"));
-        searchBySpecialistDropMenu.click();
+        //searchBySpecialistDropMenu.click();
+        WebElement medicineSpecialistDropButton = driver.findElement(By.xpath("(//li[normalize-space()='Medicine Specialist'])[1]"));
+        //medicineSpecialistDropButton.click();
+        WebElement orthopedicDropMenu = driver.findElement(By.xpath("(//li[normalize-space()='Orthopedic and Trauma Surgeon'])[1]"));
+        //orthopedicDropMenu.click();
+
+        //Locate Search by location drop Menu
+        WebElement searchByLocationDropMenu = driver.findElement(By.xpath("(//p[normalize-space()='search by location'])[1]"));
+        //searchByLocationDropMenu.click();
+        WebElement selectKhulna = driver.findElement(By.xpath("(//li[normalize-space()='Khulna'])[1]"));
+        //selectKhulna.click();
+
+        //Locate search input field
+        WebElement searchInputField = driver.findElement(By.xpath("(//input[@placeholder='Search for Doctors or Hospitals'])[1]"));
+        //searchInputField.sendKeys("Sabrina");
+        //Locate Search Button
+        WebElement searchButton = driver.findElement(By.xpath("(//button[normalize-space()='Search'])[1]"));
+        //searchButton.click();
+        //------------------------------------------------------------------
+
+        //Explore Top Doctors Section
+        //driver.findElement(By.xpath("//p[text()='eye specialist']")).click();
+        //driver.findElement(By.xpath("//p[text()='Oncologist-Cancer Specialist']")).click();
+        //-----------------------------------------------------------------------
+
+        //Our Services Section
+        //driver.findElement(By.xpath("(//h2[normalize-space()='Specialized Doctor'])[1]")).click();
+        //driver.findElement(By.xpath("(//h2[normalize-space()='Ambulance service'])[1]")).click();
+        //driver.findElement(By.xpath("(//h2[normalize-space()='Blood Donor'])[1]")).click();
+        //driver.findElement(By.xpath("(//h2[normalize-space()='Specialized Hospital'])[1]")).click();
+        //driver.findElement(By.xpath("(//h2[normalize-space()='Emergency Support'])[1]")).click();
+        //driver.findElement(By.xpath("(//h2[normalize-space()='Appointment Booking'])[1]")).click();
+        //------------------------------------------------------------------------
+
+        //Our registered specialized hospitals Section--------------------
+        WebElement findHospitalOrDiagnosticButton = driver.findElement(By.xpath("(//button[normalize-space()='Find hospital / Diagnostic center'])[1]"));
+        //findHospitalOrDiagnosticButton.click();
+        //-----------------------------------------------------------------
+
+        //Find nearest hospital Section
+        //driver.findElement(By.xpath("(//p[normalize-space()='Bangladesh Diagonostic and Consultation Centre'])[1]")).click();
+
+        //see more link
+        //driver.findElement(By.xpath("(//button[@class='text-[#2992F2] font-noto text-sm min-w-max font-semibold flex justify-center items-center gap-2.5 border-none rounded bg-transparent transition-all ease-in-out duration-500 py-0.5 px-1'][normalize-space()='See more'])[2]")).click();
+        //---------------------------------------------------------------------
+
+        //Blood Donors Section----------------------------------------------
+        //driver.findElement(By.cssSelector("body > div:nth-child(1) > div:nth-child(1) > section:nth-child(8) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > a:nth-child(3) > p:nth-child(1)")).click();
+        //------------------------------------------------------------------
+
+        //Checkout Ambulance Section
+        //driver.findElement(By.xpath("(//p[normalize-space()='Rocky Khan op'])[1]")).click();
+        //-----------------------------------------------------------------
+
+        //Read Blog section---------------------
+        //Read more blog link
+        //driver.findElement(By.xpath("(//button[normalize-space()='Read more blogs'])[1]")).click();
+
+        //Contact Us Section------------------------------
+        //Locate Name input field
+        WebElement nameInputField = driver.findElement(By.xpath("(//input[@placeholder='Your Name'])[1]"));
+        //nameInputField.sendKeys("Ashraf Ali");
+
+        //Locate Email input field
+        WebElement emailInputField = driver.findElement(By.xpath("(//input[@placeholder='Your Email'])[1]"));
+        //emailInputField.sendKeys("ashraf.iu.cse1718@gmail.com");
+
+        //Locate Phone number input field
+        WebElement phoneNumberInputField = driver.findElement(By.xpath("(//input[@placeholder='Your Phone Number'])[1]"));
+        //phoneNumberInputField.sendKeys("01925731569");
+
+        //Locate Message input field
+        WebElement messageInputField = driver.findElement(By.xpath("(//textarea[@placeholder='Your Message'])[1]"));
+        //messageInputField.sendKeys("This is sample message");
+
+        //Locate Send Message button
+        WebElement sendMessageButton = driver.findElement(By.xpath("(//button[normalize-space()='Send message'])[1]"));
+        //sendMessageButton.click();
+        //-------------------------------------------------------------------------
+
+        //Footer Section ---------------------------------------------------------------
+        //About us link
+        //driver.findElement(By.xpath("(//li[normalize-space()='About us'])[1]")).click();
+
+        //Locate Privacy Policy
+        //driver.findElement(By.xpath("(//li[normalize-space()='Privacy policy'])[1]")).click();
+
+        //Locate FAQ's Link
+        //driver.findElement(By.xpath("//li[contains(text(),'FAQ')]")).click();
+
+        //Cancellation and Refund Policy Link
+        //driver.findElement(By.xpath("(//li[normalize-space()='Cancellation & Refund Policy'])[1]")).click();
+
+        //Locate Log in as Hospital link
+        //driver.findElement(By.xpath("(//li[normalize-space()='Login as Hospital'])[1]")).click();
         Thread.sleep(3000);
     }
 
